@@ -1,0 +1,19 @@
+body {
+  color: red;
+  background-color: bisque;
+  font-size: medium;
+  font-weight: lighter;
+  text-align: left;
+  margin: top 5px;
+}
+button {
+  background-color: azure;
+  color: brown;
+}
+input {
+  color: #4f24a0;
+}
+img {
+  width: 20%;
+  height: 20%;
+}
