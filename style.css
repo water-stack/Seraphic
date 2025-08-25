@@ -1,15 +1,269 @@
+/* WhatsApp button style */
+.whatsapp-btn {
+  border-color: #25d366;
+  color: #25d366;
+}
+.whatsapp-btn:hover {
+  background: #25d366;
+  color: #fff;
+}
+/* Connect info paragraph (replaces inline style) */
+.connect-info {
+  margin-top: 1.25rem;
+}
+/* Reset & base styles */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
-  color: red;
-  background-color: bisque;
-  font-size: medium;
-  font-weight: lighter;
-  text-align: left;
-  margin: top 5px;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #f8f6f3;
+  color: #222;
+  min-height: 100vh;
+  line-height: 1.6;
 }
-button {
-  background-color: azure;
-  color: brown;
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
-input {
-  color: #4f24a0;
+
+/* Header */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+  padding: 1.5rem 0 1.2rem 0;
+  margin-bottom: 2rem;
+}
+.site-header .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 2.5rem 0 2rem 0;
+}
+.hero-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  align-items: center;
+}
+.hero-grid > div {
+  flex: 1 1 320px;
+}
+.h-eyebrow {
+  color: #b48a78;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.h-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin: 0.5rem 0 0.5rem 0;
+  font-weight: 700;
+}
+.h-sub {
+  font-size: 1.15rem;
+  color: #6d5c4d;
+  margin-bottom: 1.5rem;
+}
+.cta {
+  margin-top: 1.2rem;
+}
+
+/* Portrait */
+.portrait-wrap {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+}
+.portrait-glow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #ffe5d0 0%, #fff0 80%);
+  border-radius: 50%;
+  z-index: 1;
+}
+.portrait {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 24px 0 #e6c6b2;
+  z-index: 2;
+}
+
+/* Card & Fun Facts */
+.section {
+  padding: 2rem 0 2.5rem 0;
+}
+.card {
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px 0 #e6c6b2;
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.facts {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.fact {
+  flex: 1 1 120px;
+  background: #f8f6f3;
+  border-radius: 0.8rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  box-shadow: 0 1px 6px 0 #f3e2d6;
+}
+.icon {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #b48a78;
+  margin-bottom: 0.5rem;
+}
+.fact h3 {
+  margin: 0.2rem 0 0.3rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.fact p {
+  margin: 0;
+  color: #6d5c4d;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  border-radius: 2em;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.btn-primary {
+  background: #b48a78;
+  color: #fff;
+  box-shadow: 0 2px 8px 0 #e6c6b2;
+}
+.btn-primary:hover {
+  background: #a06c4d;
+}
+.btn-outline {
+  background: #fff;
+  color: #b48a78;
+  border: 2px solid #b48a78;
+}
+.btn-outline:hover {
+  background: #b48a78;
+  color: #fff;
+}
+
+/* Form */
+.form {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1.2rem;
+}
+.input {
+  flex: 1 1 180px;
+  padding: 0.7em 1em;
+  border-radius: 2em;
+  border: 1px solid #e6c6b2;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.input:focus {
+  border: 1.5px solid #b48a78;
+}
+
+/* Visually hidden (for accessibility) */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Footer */
+.footer {
+  background: #fff;
+  border-top: 1px solid #ececec;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: #b48a78;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+/* Links */
+.link {
+  color: #b48a78;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.link:hover {
+  color: #a06c4d;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .hero-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+  .portrait-wrap {
+    margin: 2rem auto 0 auto;
+  }
+  .facts {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .card {
+    padding: 1.2rem 0.5rem;
+  }
 }
